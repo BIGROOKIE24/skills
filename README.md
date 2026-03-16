@@ -22,6 +22,44 @@ Each skill is self-contained in its own folder with a `SKILL.md` file containing
 - [./spec](./spec): The Agent Skills specification
 - [./template](./template): Skill template for creating new skills
 
+## Skills Content
+
+### `famou-artifact-generator`
+
+Description: Create the core materials for a FaMou task from an initial idea or problem statement.
+
+Purpose:
+- Clarify requirements and generate `problem.md`
+- Generate `init.py`, `evaluator.py`, and `prompt.md`
+- Verify that the initial solution and evaluator can run correctly
+
+### `famou-data-analysis`
+
+Description: Analyze and understand datasets used in FaMou tasks or standalone data analysis work.
+
+Purpose:
+- Understand data structure and field meanings
+- Identify data quality issues such as missing values, duplicates, and anomalies
+- Produce analysis conclusions and data processing suggestions
+
+### `famou-experiment-manager`
+
+Description: Manage the lifecycle of FaMou experiments through configuration, submission, and result retrieval.
+
+Purpose:
+- Check `famou-ctl` availability and API configuration
+- Find `config.yaml` and submit experiments
+- Query status, inspect logs, delete experiments, and fetch results
+
+### `famou-result-visualization`
+
+Description: Convert a final Python-form FaMou solution into an interactive visualization page.
+
+Purpose:
+- Read and understand the structure of the solution
+- Choose a suitable visualization style for the problem type
+- Generate an HTML page to display the final solution result
+
 ## Try in Claude Code
 
 You can register this repository as a Claude Code Plugin marketplace by running the following command in Claude Code:
