@@ -64,15 +64,35 @@ The frontmatter requires only two fields:
 
 The markdown content below contains the instructions, examples, and guidelines that Claude will follow.
 
+# For Developers
+
+## Branch Strategy
+
+| Branch | Purpose |
+|--------|---------|
+| **`develop`** | Default branch for all submissions. All new skills and changes should be submitted here via Pull Request. |
+| **`main`** | Stable branch. Only updated through reviewed merges from `develop`, and corresponds to official release versions. |
+
+### Workflow
+
+1. **Fork** this repository and create your feature branch from `develop`
+2. Commit your changes and push to your fork
+3. Open a **Pull Request** targeting the `develop` branch of `baidubce/skills`
+4. A **reviewer** will review your PR and merge it into `develop`
+5. Periodically, `develop` is merged into `main` to cut a new stable release
+
+> **Note:** Do not submit PRs directly to `main`. All contributions must go through `develop` for review.
+
 # Contributing
 
 We welcome contributions from the community! To add a new skill:
 
 1. Fork this repository
-2. Create a new folder under `skills/` with your skill name
-3. Add a `SKILL.md` file following the [Agent Skills specification](https://agentskills.io/specification)
-4. Add a `LICENSE.txt` file if applicable
-5. Submit a pull request
+2. Create a feature branch from `develop`
+3. Create a new folder under `skills/` with your skill name
+4. Add a `SKILL.md` file following the [Agent Skills specification](https://agentskills.io/specification)
+5. Add a `LICENSE.txt` file if applicable
+6. Submit a Pull Request to the `develop` branch
 
 # License
 
