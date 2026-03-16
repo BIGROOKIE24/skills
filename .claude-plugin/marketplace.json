@@ -1,0 +1,20 @@
+{
+  "name": "bce-agent-skills",
+  "owner": {
+    "name": "Baidu AI Cloud",
+    "email": "bce-skills@baidu.com"
+  },
+  "metadata": {
+    "description": "Baidu AI Cloud official agent skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "bce-skills",
+      "description": "Collection of Baidu AI Cloud skills including media processing, stock tracking, task management, and more",
+      "source": "./",
+      "strict": false,
+      "skills": []
+    }
+  ]
+}
